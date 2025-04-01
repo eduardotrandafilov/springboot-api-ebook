@@ -73,5 +73,4 @@ public class ProductController {
 		BeanUtils.copyProperties(productRecordDto, productModel);
 		return ResponseEntity.status(HttpStatus.OK).body(productRepository.save(productModel));
 	}
-
 }
